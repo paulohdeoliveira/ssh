@@ -1,4 +1,24 @@
-#### Configuração SSH
+#### Configuração 2FA U2F
+
+>[!IMPORTANT]
+> É necessário conectar a chave de segurança física antes de gerar as chaves.
+
+>[!TIP]
+> U2F é a melhor opção disponível para autenticação de dois fatores
+
+Gerar Chaves
+```
+ssh-keygen -t ed25519-sk
+```
+
+Copiar chave pública para o servidor
+```
+ssh-copy-id -i .ssh/id_ed25519_sk.pub user@aa.dd.rr.es
+```
+
+
+
+#### Configuração 2FA OTP
 
 Instalar google authenticator
 ```
@@ -9,7 +29,6 @@ Configurar o google authenticator
 ```
 google-authenticator
 ```
-
 
 ##### Arquivo /etc/ssh/sshd_config
 
