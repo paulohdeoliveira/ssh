@@ -37,3 +37,5 @@ auth required pam_google_authenticator.so
 >[!IMPORTANT]
 > A configuração do google authenticator é realizada por usuário.
 > Para permitir login de usuários que ainda não configuraram o OTP substituir ```auth required pam_google_authenticator.so``` por ``` auth required pam_google_authenticator.so nullok```
+>
+> Para que o código que está sendo digitado seja mostrado  ```auth required pam_google_authenticator.so echo_verification_code```
