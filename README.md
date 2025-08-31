@@ -11,12 +11,15 @@ Gerar Chaves
 ssh-keygen -t ed25519-sk
 ```
 
-Copiar chave pública para o servidor
+Copiar chave pública para o servidor (SSH - Linux)
 ```
 ssh-copy-id -i .ssh/id_ed25519_sk.pub user@aa.dd.rr.es
 ```
 
-
+Copiar chave pública para o servidor (SSH - Windows)
+´´´
+cat ~/.ssh/id_rsa.pub | ssh user@aa.dd.rr.ss "cat >> ~/.ssh/authorized_keys"
+´´´´
 
 #### Configuração 2FA OTP
 
