@@ -19,7 +19,7 @@ ssh-copy-id -i .ssh/id_ed25519_sk.pub user@aa.dd.rr.es
 Copiar chave pública para o servidor (SSH - Windows)
 
 ```
-cat ~/.ssh/id_rsa.pub | ssh user@aa.dd.rr.ss "cat >> ~/.ssh/authorized_keys"
+cat ~/.ssh/id_rsa.pub | ssh user@aa.dd.rr.es "cat >> ~/.ssh/authorized_keys"
 ```
 
 #### Configuração 2FA OTP
